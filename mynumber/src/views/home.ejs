@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+
+    <%- include('./partials/header') %>
+
+
+    <main>
+       <h1><%= titulo %></h1>
+       
+       <section class="section">
+            <% numbers.forEach(number => { %>
+                <article class="article">
+                    <div class="imagen">
+                        <img src="/images/<%= number.imagen %>" alt="">
+                    </div>
+                    <div class="info">
+                        <h4><%= number.nombre %></h4>
+                        <span>Valor = <%= number.valor %></span>
+                    </div>
+                </article>
+            <% }) %>
+      </section> 
+    </main>
+
+   <%- include('./partials/footer')%>
+
+</body>
+</html>
