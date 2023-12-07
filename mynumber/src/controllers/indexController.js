@@ -1,61 +1,31 @@
 
-const numbers = [
-    {
-        id: 1,
-        nombre: 'Número_Cero',
-        valor: 0,
-        imagen: 'cero.png'
-    },
-    {
-        id: 2,
-        nombre: 'Número_Uno',
-        valor: 1,
-        imagen: 'uno.png'
-    },
-    {
-        id: 3,
-        nombre: 'Número_Dos',
-        valor: 2,
-        imagen: 'dos.png'
-    },
-    {
-        id: 4,
-        nombre: 'Número_Tres',
-        valor: 3,
-        imagen: 'tres.png'
-    },
-    {
-        id: 5,
-        nombre: 'Número_Cuatro',
-        valor: 4,
-        imagen: 'cuatro.png'
-    },
-    {
-        id: 6,
-        nombre: 'Número_Cinco',
-        valor: 5,
-        imagen: 'cinco.png'
-    },
-    {
-        id: 7,
-        nombre: 'Número_Seis',
-        valor: 6,
-        imagen: 'seis.png'
-    },
-]
-
-
+const {leerArchivo} = require('../data/dbLogica')
 
 const controladorIndex = {
     
-    index : (req, res) => {
+    listar : (req, res) => {
+        numbers = leerArchivo('numeros');
         res.render('home', { 
             title: 'Numeros', 
             titulo: 'ESTOS SON NUMEROS',
             numbers
       })
 
-}}
+    },
+
+    verNumero: (req,res)=>{
+        let id = req.params.id
+        console.log(id)
+        numbers = leerArchivo('numeros')
+        number = numbers[id-1]
+        console.log(numbers[id-1].id)
+        res.render('index',{
+            title:'El titulo',
+            number
+        })
+    }
+
+}
 
 module.exports = controladorIndex
 

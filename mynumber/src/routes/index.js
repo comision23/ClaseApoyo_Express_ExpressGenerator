@@ -1,10 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-const controladorIndex = require('../controllers/indexController')
+const {listar,verNumero} = require('../controllers/indexController')
 
 
 /* GET home page. */
-router.get('/', controladorIndex.index );
+router.get('/', listar );
+router.get('/verNumero/:id',verNumero)
 
 module.exports = router;
