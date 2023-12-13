@@ -1,6 +1,9 @@
 
 const {leerArchivo} = require('../data/dbLogica')
 
+const fs = require('fs')
+const path = require('path')
+
 const controladorIndex = {
     
     listar : (req, res) => {
@@ -24,6 +27,9 @@ const controladorIndex = {
             number
         })
     }
+
+
+    
 
 }
 
