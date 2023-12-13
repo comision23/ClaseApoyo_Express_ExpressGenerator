@@ -3,48 +3,59 @@
         "id": 1,
         "nombre": "Número_Cero",
         "valor": 0,
-        "imagen": "cero.png"
+        "imagen": "cero.png",
+        "tipo" : "par"
     },
     {
         "id": 2,
         "nombre": "Número_Uno",
         "valor": 1,
-        "imagen": "uno.png"
+        "imagen": "uno.png",
+        "tipo" : "impar"
+
     },
     {
         "id": 3,
         "nombre": "Número_Dos",
         "valor": 2,
-        "imagen": "dos.png"
+        "imagen": "dos.png",
+        "tipo" : "par"
     },
     {
         "id": 4,
         "nombre": "Número_Tres",
         "valor": 3,
-        "imagen": "tres.png"
+        "imagen": "tres.png",
+        "tipo" : "impar"
+
     },
     {
         "id": 5,
         "nombre": "Número_Cuatro",
         "valor": 4,
-        "imagen": "cuatro.png"
+        "imagen": "cuatro.png",
+        "tipo" : "par"
     },
     {
         "id": 6,
         "nombre": "Número_Cinco",
         "valor": 5,
-        "imagen": "cinco.png"
+        "imagen": "cinco.png",
+        "tipo" : "impar"
+
     },
     {
         "id": 7,
         "nombre": "Número_Seis",
         "valor": 6,
-        "imagen": "seis.png"
+        "imagen": "seis.png",
+        "tipo" : "par"
     },
     {
         "id": 8,
         "nombre": "Número_Siete",
         "valor": 7,
-        "imagen": "siete.png"
+        "imagen": "siete.png",
+        "tipo" : "impar"
     }
 ]
