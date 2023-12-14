@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <h1> ESTO ES EL DETALLE DE <%= number.nombre %> </h1>
+    <div>
+      <%- include('./partials/articleNumber',{title,number}) %>
+    </div>
+    <div>
+      <a href="/edit/<%= number.id %>">Editar</a>
+      <button>Eliminar</button>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

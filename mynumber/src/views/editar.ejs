@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+
+    <%- include('./partials/header') %>
+
+
+    <main>
+<h1>vamos a editar</h1>
+
+        <form action="/edit/<%= numeroEdit.id %>?_method=PUT" method="POST">
+            <div>
+                <label for="nombre">Ingrese Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ejemplo Número_nombre" value="<%= numeroEdit.nombre %>" required>
+            </div>
+
+            <div>
+                <label for="valor">Ingrese Valor</label>
+                <input type="number" name="valor" id="valor" placeholder="Ejemplo 1" value="<%= numeroEdit.valor %>" required>
+            </div>
+
+            <div>
+                <label for="imagen">Ingrese Nombre archivo imagen</label>
+                <input type="text" name="imagen" id="imagen" placeholder="Ejemplo nombre.png" value="<%= numeroEdit.imagen %>" required>
+            </div>
+
+            <div>
+                <label for="tipo">Ingrese Tipo de Número</label>
+                <input type="text" name="tipo" id="tipo" placeholder="Ejemplo par / impar" value="<%= numeroEdit.tipo %>" required>
+            </div>
+
+            <div>
+                <button type="submit">Guardar</button>
+            </div>
+
+       </form>
+        
+    </main>
+
+   <%- include('./partials/footer')%>
+
+</body>
+</html>

@@ -13,7 +13,7 @@
        
        <section class="section">
             <% numbers.forEach(number => { %>
-                <a href="verNumero/<%= number.id %>">
+                <a href="detail/<%= number.id %>">
                     <%- include('./partials/articleNumber',{number}) %>
                 </a>
             <% }) %>
